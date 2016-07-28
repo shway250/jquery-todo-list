@@ -9,27 +9,27 @@
     <link href='https://fonts.googleapis.com/css?family=Baumans' rel='stylesheet' type='text/css'>
 </head>
 
-<body class ="clearfix">
-<div class="col-2">
-    <h1>Things You Gotts Do!</h1>
-    <div class="input">
-    <h2 class="button-text">Type Thing You Gotta Do</h2>
+<body>
+        <div class="grid">
+                <div class="col-2-3">
+                  <h1>Things You Gotts Do!</h1>
+                          <div class="input">
+            <input id="text-input" type="text" name="toDo" placeholder="Type it here:">
+            </div>
+            <div class="button" id="addItem">Add To List</div>
+                </div>
 
-        <!-- <label class="button-text">Type Thing You Gotta Do</label> -->
-        <input id="text-input" type="text" name="toDo">
-        <div class="button" id="addItem">Add To List</div>
-    </div>
-    </div>
-    <div class="cleafix"></div>
-    <div class="list">
-        <ul id='list-container'>
-            <li class="list-item delete"></li>
-        </ul>
-    </div>
-    <!--jQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-    <!--local Javascript Fil-->
-    <script type="text/javascript" src="js/script.js"></script>
+                <aside class="col-1-3">
+                    <div class="list-info">
+                        <ul id='list-container'>
+                            <li class="list-item delete"></li>
+                        </ul>
+                    </div>
+                </aside>
+            <!--jQuery-->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+            <!--local Javascript Fil-->
+            <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

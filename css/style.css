@@ -1,53 +1,296 @@
-body {
-  font-family: 'Baumans', cursive;
-  background-color: #F9FBBC;
-  width: 100%;
-/*  position: relative;*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    clear: both;
+    *zoom: 1;
+}
+
+
+/*
+  ========================================
+  Custom Styles
+  ========================================
+*/
+
+body {
+    font-family: 'Baumans', cursive;
+    background-color: #F9FBBC;
+    width: 100%;
+    position: relative;
+    text-transform: uppercase;
+}
+
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.grid {
+    margin: 0 auto;
+    width: 960px;
+}
+
+
+.grid,
+.col-1-3,
+.col-2-3 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-1-3,
+.col-2-3 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.col-1-3 {
+    width: 33%;
+}
+
+.col-2-3 {
+    width: 66%;
+    padding: 100px;
+}
+
+
+
+/*
+  ========================================
+  Left Column
+  ========================================
+*/
 
 h1 {
-  text-align: center;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: right;
+    display: block;
+    float: right;
+    clear: right;
 }
 
-.clearfix {
-  clear: both;
+#text-input {
+    display: block;
+    text-align: right;
+    float: right;
+    clear: right;
+    margin: 20px 0;
+}
+
+.button {
+    background-color: #F12E3B;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 300px;
+    clear: both;
+    float: right;
+    clear: right;
 }
 
 
-.list {
-  float: left;
-  width: 300px
+/*
+  ========================================
+  Right Column
+  ========================================
+*/
 
-
+.list-info {
+    font-size: 20px;
+    margin-top: 88px;
+    padding-bottom: 22px;
+    text-align: center;
+    display: block
 }
 
+.li {
+    display: block;
+    margin: 10px 0;
+    font-size: 20px;
+    padding: 5px;
+    border-bottom: 2px solid #000;
+}
+
+#list-container {
+    list-style-type: none;
+    height: auto;
+}
 
 .deleteButton {
-  float: left;
-  background-color: #F12E3B;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  display: inline-block;
-  text-align: center;
-  line-height: 20px;
-}
-
-#list-container{
-  list-style-type: none;
-}
-
-#text-input{
-  display: inline-block;
-}
-
-.button{
-  background-color: #F12E3B;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 300px;
-  float: left;
-
+    color: #000;
+    float: left;
+    background-color: #F12E3B;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    float: right;
 }
