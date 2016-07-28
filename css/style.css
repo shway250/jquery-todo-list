@@ -1,23 +1,53 @@
-.list-item{
+body {
+  font-family: 'Baumans', cursive;
+  background-color: #F9FBBC;
+  width: 100%;
+/*  position: relative;*/
+}
+
+h1 {
+  text-align: center;
+}
+
+.clearfix {
+  clear: both;
+}
+
+
+.list {
+  float: left;
+  width: 300px
+
 
 }
 
-.delete{
 
+.deleteButton {
+  float: left;
+  background-color: #F12E3B;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  line-height: 20px;
 }
 
 #list-container{
-
+  list-style-type: none;
 }
 
 #text-input{
-
-}
-
-#submitButton{
-  
+  display: inline-block;
 }
 
 .button{
-  background-color: grey;
+  background-color: #F12E3B;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 300px;
+  float: left;
+
 }

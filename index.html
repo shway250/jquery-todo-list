@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Things You Gotta Do!</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Things You Gotta Do!</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Baumans' rel='stylesheet' type='text/css'>
 </head>
-<body>
-  <h1>Things You Gotts Do!</h1>
-  <form>
-    <input id="text-input" type="text" name="toDo">
-    <div class="button" id="addItem">Add To List</div>
-  </form>
 
-  <div>
-    <ul id='list-container'>
-      <li class="list-item delete"></li>
-    </ul>
-  </div>
+<body class ="clearfix">
+<div class="col-2">
+    <h1>Things You Gotts Do!</h1>
+    <div class="input">
+    <h2 class="button-text">Type Thing You Gotta Do</h2>
 
-  <!--jQuery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-  <!--local Javascript Fil-->
-  <script type="text/javascript" src="js/script.js"></script>
-
+        <!-- <label class="button-text">Type Thing You Gotta Do</label> -->
+        <input id="text-input" type="text" name="toDo">
+        <div class="button" id="addItem">Add To List</div>
+    </div>
+    </div>
+    <div class="cleafix"></div>
+    <div class="list">
+        <ul id='list-container'>
+            <li class="list-item delete"></li>
+        </ul>
+    </div>
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <!--local Javascript Fil-->
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>
